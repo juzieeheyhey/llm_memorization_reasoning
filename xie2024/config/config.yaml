@@ -1,0 +1,11 @@
+model_name: "meta-llama/Meta-Llama-3-8B"
+training_args:
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 8
+  num_train_epochs: 5
+  learning_rate: 2e-5
+  weight_decay: 0.01
+  logging_steps: 50
+  save_steps: 200
+  fp16: true
+max_len: 256
